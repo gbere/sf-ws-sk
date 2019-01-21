@@ -65,12 +65,16 @@ indent_size = 4
 
 [package.json]
 indent_style = space
-indent_size = 2
+indent_size = 4
+
+[webpack.config.js]
+indent_style = space
+indent_size = 4
 
 [phpunit.xml{,.dist}]
 indent_style = space
 indent_size = 4
 
-[phpstan.neon]
+[phpstan-*.neon]
 indent_style = space
 indent_size = 4

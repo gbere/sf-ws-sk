@@ -1,0 +1,9 @@
+parameters:
+    tmpDir: var/cache/phpstan-tests
+    fileExtensions:
+        - php
+        - dist
+
+includes:
+    - vendor/phpstan/phpstan-phpunit/extension.neon
+    - vendor/phpstan/phpstan-phpunit/rules.neon

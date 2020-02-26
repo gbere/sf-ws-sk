@@ -72,7 +72,7 @@
     },
     "scripts": {
         "phpstan": "phpstan analyse src/ -c phpstan.neon --level=7 --no-progress -vvv --memory-limit=1024M",
-        "phpstan-tests": "phpstan analyse tests/ -c phpstan.neon --level=7 --no-progress -vvv --memory-limit=1024M",
+        "phpstan-tests": "phpstan analyse tests/ -c phpstan-tests.neon --level=7 --no-progress -vvv --memory-limit=1024M",
         "phpunit": "simple-phpunit",
         "cscheck": "php-cs-fixer fix --diff --dry-run -v",
         "csfix": "php-cs-fixer fix",

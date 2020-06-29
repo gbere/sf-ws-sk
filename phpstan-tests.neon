@@ -1,5 +1,8 @@
 parameters:
+    level: 5
     tmpDir: var/cache/phpstan-tests
+    paths:
+        - tests
     excludes_analyse:
         - tests/bootstrap.php
     autoload_files:

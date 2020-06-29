@@ -2,9 +2,10 @@
     "type": "project",
     "license": "MIT",
     "require": {
-        "php": "^7.2",
+        "php": "^7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "doctrine/doctrine-migrations-bundle": "^3.0",
         "sensio/framework-extra-bundle": "^5.1",
         "symfony/asset": "*",
         "symfony/console": "*",
@@ -66,8 +67,8 @@
         "symfony/polyfill-php56": "*"
     },
     "scripts": {
-        "phpstan": "phpstan analyse src/ -c phpstan.neon --level=7 --no-progress -vvv --memory-limit=1024M",
-        "phpstan-tests": "phpstan analyse tests/ -c phpstan-tests.neon --level=7 --no-progress -vvv --memory-limit=1024M",
+        "phpstan": "phpstan analyse -c phpstan.neon --no-progress -vvv --memory-limit=1024M",
+        "phpstan-tests": "phpstan analyse -c phpstan-tests.neon --no-progress -vvv --memory-limit=1024M",
         "phpunit": "simple-phpunit",
         "cscheck": "php-cs-fixer fix --diff --dry-run -v",
         "csfix": "php-cs-fixer fix",

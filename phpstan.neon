@@ -1,7 +1,11 @@
 parameters:
+    level: 5
+    checkGenericClassInNonGenericObjectType: false
     tmpDir: var/cache/phpstan
     symfony:
         container_xml_path: var/cache/dev/srcApp_KernelDevDebugContainer.xml
+    paths:
+        - src
     excludes_analyse:
         - src/Migrations
         - src/Kernel.php
